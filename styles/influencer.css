@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
 }
 .section-title{
@@ -19,14 +20,7 @@
 /* header styles */
 header{
     background-color: #FFF;
-    padding: 80px 165px 80px 120px;
-   
-    
-    
-    
-    
-    
-    
+    padding: 80px 165px 80px 120px;  
     
 }
 nav{
@@ -50,18 +44,26 @@ nav li a{
     text-decoration: none;
     color: #3A3A3A;
 }
-/* banner styles */
-.banner{
-    display: flex;
-    gap: 25px;
-    background-image: url('../images/Circle\ design.svg' );
-    background-repeat: no-repeat;
-    background-position: bottom   right ;
+nav li a:hover{
+    color: chartreuse;
 }
 
 
+/* banner styles */
+.banner{
+    display: flex;
+    
+     
+}
+.banner-content{
+    
+    margin: 0 auto;
+
+    
+}
 .banner-title{
-    margin-top: 170px;
+    
+    padding-top: 100px;
     font-size: 3.2rem;
     font-weight: 700;
     color: #3A3A3A;
@@ -73,16 +75,20 @@ nav li a{
     color: #3A3A3A;
     
 }
-.banner-img{
-    margin-top: 90px;
-    padding-left: 250px
+.banner img{
+    margin-top: 35px;
+    padding-right: 25px;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    
+    
 }
 .btn-primary{
     border: none;
     border-radius: 2.5rem;
     background-color: #E02C6D;
     padding: 10PX 24px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-weight: 700;
     color: #FFFFFF;
     
@@ -90,13 +96,13 @@ nav li a{
 #arrow{
     padding-left: 10px;
 }
-.sponsor-container{
+.sponsors-container{
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-left: 35px;
-    gap: 15px;
+    gap: 25px;
 }
 /* main section*/
 .section-title{
@@ -106,13 +112,15 @@ nav li a{
     text-align: center;
 }
 
+
 .popular-card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 120px;
+    padding-right: 150px;
     gap: 3.3rem;
     margin-top: 40px;
+    
     
 
 }
@@ -127,71 +135,241 @@ nav li a{
     font-weight: 700;
     color: rgba(224, 44, 110, 0.87);
     text-align:end;
-    padding-right: 200px;
+    padding-right: 100px;
     margin-top: 50px;
     
     
 }
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 180px;
+    padding-left: 100px;
+    padding-right: 80px;
+    
+}
+.features-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0A0826;
+    line-height: 60px;
+    margin-top: 20px;
+    padding-left:75px ;
+}
+.features-description{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 28px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.features img{
+    width: 500px;
+    border-radius: 7px;
+    
+}
+
+.btn-secondary{
+    background-color: #E02C6D;
+    color: #FFF;
+    font-weight: 700;
+    align-items: flex-start;
+    padding: 10px 24px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 73px;
+}
+.footer-section{
+    height: 239px;
+    background-color: #0A0826;
+    margin-top: 100px;
+    
+    
+}
+.footer-section h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.footer-section p{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Text-Gray-300, #D9DBE1);
+    line-height: 24px;
+    text-align: center;
+}
+.footer-icon{
+    display: flex;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-left: 560px;
+    padding-right: 560px;
+    
+    justify-content: space-between;
+    text-align: center;
+}
+#instagram{
+    background-color:#3A3A3A;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    padding-top: 15px;
+}
+#dribble{
+    background-color: #3A3A3A;
+    width: 55px;
+    height: 55px;
+    padding-top: 15px;
+    border-radius: 100%;
+}
+#twitter{
+    background-color: #3A3A3A;
+    width: 55px;
+    height: 55px;
+    padding-top: 15px;
+    border-radius: 100%;
+}
+#youtube{
+    background-color: #3A3A3A;
+    width: 55px;
+    height: 55px;
+    padding-top: 15px;
+    border-radius: 100%;
+}
+
+
+
 
 /*Responsive media queries for mobile */
 @media screen  and (max-width: 576px) {
     header{
         padding: 20px;
+        margin-left: 30px
     }
-    nav, 
-    .banner
-     {
+    nav{
         flex-direction: column;
-        align-items: center;
+        padding-left: 45px;
+    } 
+    
+    .banner{
+        flex-direction:column-reverse;
+        background-position: top ;
+        gap: 50px;
+        
     }
-    .sponsor-container{
+    .banner-title{
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+    .banner-description{
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 20px;
+        
+    } 
+    .banner img{
+        padding-top: 40px;
+        padding-left: 100px;
+    }  
+    
+     .sponsors-container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding-right: 70px;
         align-items: center;
         
     }
+    
+    
     .popular-card-container{
         display: flex;
         flex-direction: column;
         padding-left: 25px;
         padding-right: 25px;
         margin-top: 15px;
+        margin-left: 70px;
+        
     }
     .popular-card-container .card{
         padding: 10px;
         border-radius: 5px;
-        width: 329px;
-        height: 476px;
+        width: 360px;
+        height: auto;
+
         padding: 28px 10px 28px 28px;
-
-    }
-
-    .banner-img{
-        padding-right: 90px;
-        padding-left: 70px;
-    }
-    .description{
-        text-align: end;
-        padding-right: 30px;
-        margin-top: 30px;
-    }
-    .banner-title, .banner-description{
-        padding-left: 50px;
     }
     .btn-primary{
         align-items: center;
         margin-left: 90px;
+    }
+    .description{
+        padding-right: 0px;
+        
+    }
+    .features{
+        flex-direction: column-reverse;
+        gap: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 40px;
+    }
+    .features-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 5px;
+        
+        
+    }
+    .features-description{
+        width: 500px;
+        line-height: 1.7rem;
+        font-weight: 700;
+        margin-right: 10px
+        
+        
+    }
+    .features img{
+        border-radius: 7px;
+        padding-right: 50px;
+    }
+    .btn-secondary{
+        
+        margin-left: 150px;
+        margin-top: 90px;
+    }
+    .footer-section{
+        width: 576px;
+        margin-left: 0px;
+    }
+    .footer-section h3{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .footer-section p{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .footer-icon{
+        padding-left: 130px;
+        padding-right: 130px;
     }
     #arrow{
         align-items: center;
     }
     
     
+} 
         
     
 
-}
+
     
 
 
