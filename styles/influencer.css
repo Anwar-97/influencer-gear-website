@@ -208,34 +208,34 @@ nav li a:hover{
     padding-top: 10px;
     padding-left: 560px;
     padding-right: 560px;
-    
+    gap: 30px;
     justify-content: space-between;
     text-align: center;
 }
 #instagram{
     background-color:#3A3A3A;
-    width: 55px;
+    width: 60px;
     height: 55px;
     border-radius: 100%;
     padding-top: 15px;
 }
 #dribble{
     background-color: #3A3A3A;
-    width: 55px;
+    width: 60px;
     height: 55px;
     padding-top: 15px;
     border-radius: 100%;
 }
 #twitter{
     background-color: #3A3A3A;
-    width: 55px;
+    width: 60px;
     height: 55px;
     padding-top: 15px;
     border-radius: 100%;
 }
 #youtube{
     background-color: #3A3A3A;
-    width: 55px;
+    width: 60px;
     height: 55px;
     padding-top: 15px;
     border-radius: 100%;
